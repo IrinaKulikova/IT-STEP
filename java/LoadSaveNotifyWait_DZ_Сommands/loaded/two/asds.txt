@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+        Комп'ютерна Академія ШАГ
+    </title>
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1264">
+<link rel="stylesheet" type="text/css" href="../styles/style.css">
+<link rel="stylesheet" type="text/css" href="../styles/geo_names_ua.css">
+<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+<link rel="stylesheet" type="text/css" href="../styles/fonts.css">
+<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55617341-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="new-font-famaly class1 class2 class3">
+<div class="header-bg">
+<header>
+<ul class="site-language"><li data-lang="cz"><a href="../../cz">CZ</a></li><li data-lang="kh"><a href="../../kh">KH</a></li><li data-lang="ua" class="active-language"><a href="../../ua">UA</a></li><li data-lang="ro"><a href="../../ro">RO</a></li><li data-lang="ru"><a href="../../ru">RU</a></li><li data-lang="en"><a href="../../en">EN</a></li><li data-lang="pt"><a href="../../pt">PT</a></li><li data-lang="est"><a href="../../est">EST</a></li><li data-lang="sk"><a href="../../sk">SK</a></li><li data-lang="by"><a href="../../by">BY</a></li><li data-lang="bg"><a href="../../bg">BG</a></li><li data-lang="ge"><a href="../../ge">GE</a></li><li data-lang="az"><a href="../../az">AZ</a></li><li data-lang="kz"><a href="../../kz">KZ</a></li></ul><div class="clr"> </div> </header>
+</div>
+<div class="nav-main-bg">
+<div class="main-logo">
+<a class="logo" href="../ua" alt="ШАГ">
+<img src="../images/logos/logo_ua_2.png" alt="ШАГ">
+</a>
+<div class="nav-main">
+<ul class="nav-main-menu">
+<li><a href="about/" class="about_academy">Про Академію</a></li>
+<li><a href="http://final.itstep.org/" class="stud_works">Роботи студентів</a></li>
+<li><a href="http://success.itstep.org/" class="success_stories">Історії успіху</a></li>
+
+</ul>
+</div>
+<div class="nav-btn"></div>
+<div class="clr"></div>
+</div>
+</div>
+<div class="country-map-bg">
+<div class="country-map">
+<h2 class="filial">Оберіть філію</h2>
+<select name="" id="country-select" onchange="top.location=this.value">
+<option value="http://itstep.az/">Баку</option>
+
+<option value="http://itstep.md/">Кишинів</option>
+<option value="http://itstep.com.br/">Ріо де Жанейро</option>
+<option value="http://astana.itstep.kz/">Астана</option>
+<option value="http://almaty.itstep.kz">Алмати</option>
+<option value="http://karaganda.itstep.kz/">Караганда</option>
+<option value="http://itstep.by"> Мінськ</option>
+<option value="http://gomel.itstep.by">Гомель</option>
+<option value="http://bobruisk.itstep.by/">Бобруйськ</option>
+<option value="http://tula.itstep.org">Тула</option>
+<option value="http://lipetsk.itstep.org">Липецьк</option>
+<option value="http://krasnodar.itstep.org/">Краснодар</option>
+<option value="http://itstep.spb.ru">Санкт-Петербург</option>
+<option value="http://msk.itstep.org">Москва</option>
+<option value="https://vrn.itstep.org/">Воронеж</option>
+<option value="https://nn.itstep.org/">Нижній Новгород</option>
+<option value="https://nsk.itstep.org/">Новосибірськ</option>
+<option value="https://rostov.itstep.org/">Ростов-на-Дону</option>
+
+
+
+
+<option value="http://lviv.itstep.org">Львів</option>
+<option value="http://khmelnitskiy.itstep.org/">Хмельницький</option>
+<option value="https://chernivtsi.itstep.org/">Чернівці</option>
+<option value="http://zhitomir.itstep.org/">Житомир</option>
+<option value="http://lutsk.itstep.org/">Луцьк</option>
+<option value="http://rivne.itstep.org/">Рівне</option>
+<option value="http://vinnitsa.itstep.org/">Вінниця</option>
+<option value="http://kiev.itstep.org/">Київ</option>
+<option value="http://chernigov.itstep.org/">Чернігів</option>
+<option value="http://poltava.itstep.org/">Полтава</option>
+<option value="http://itstep.dp.ua">Дніпро</option>
+<option value="http://itstep.kh.ua/">Харків</option>
+
+<option value="http://mariupol.itstep.org/">Маріуполь</option>
+
+<option value="http://itstep.zp.ua">Запоріжжя</option>
+<option value="http://kr.itstep.org/">Кривий Ріг</option>
+<option value="http://kherson.itstep.org/">Херсон</option>
+<option value="http://nikolaev.itstep.org/">Миколаїв</option>
+<option value="http://od.itstep.org/">Одеса</option>
+<option value="http://simferopol.itstep.org/">Сімферополь</option>
+<option value="http://praha.itstep.org/">Прага</option>
+<option value="http://itstep.ee/">Таллін</option>
+<option value="http://ro.itstep.org/">Бухарест</option>
+<option value="http://itstep.bg/">Софія</option>
+<option value="http://ge.itstep.org/">Тбілісі</option>
+<option value="http://cambodia.itstep.org/">Пномпен</option>
+<option value="http://itstep.us/">Сіетл</option>
+<option value="http://bratislava.itstep.org/">Братислава</option>
+<option value="https://itstep.mx/">Tiхуана</option>
+</select>
+<div class="country-name-wrapper ua big-map">
+<span class="country-name-ua">Україна</span>
+</div>
+<div class="country-name-wrapper kz">
+<span class="country-name-kz">Казахстан</span>
+</div>
+<div class="country-name-wrapper ru">
+<span class="country-name-ru">Росія</span>
+</div>
+<div class="country-name-wrapper by">
+<span class="country-name-by">Білорусь</span>
+</div>
+<div class="country-name-wrapper md ">
+<span class="country-name-md" style="font-size:15px;">Молдова</span>
+</div>
+
+<div class="country-name-wrapper sh ">
+<span class="country-name-sh">Швейцарія</span>
+</div>
+<div class="country-name-wrapper cz">
+<span class="country-name-cz">Чехія</span>
+</div>
+<div class="country-name-wrapper lt ">
+<span class="country-name-lt">Литва</span>
+</div>
+<div class="country-name-wrapper br">
+<span class="country-name-br">Бразилія</span>
+</div>
+<div class="country-name-wrapper ro">
+<span class="country-name-ro" style="font-size:18px;">Румунія</span>
+</div>
+<div class="country-name-wrapper bg">
+<span class="country-name-bg" style="font-size:18px;">Болгарія</span>
+</div>
+<div class="country-name-wrapper ge">
+<span class="country-name-ge" style="font-size:18px;">Грузія</span>
+</div>
+<div class="country-name-wrapper kh">
+<span class="country-name-kh">Камбоджа</span>
+</div>
+<div class="country-name-wrapper sk">
+<span class="country-name-kh">Словакія</span>
+</div>
+<div class="country-name-wrapper usa">
+<span class="country-name-ua">США</span>
+</div>
+<div class="country-name-wrapper mx">
+<span class="country-name-ua">Мексика</span>
+</div>
+<div class="country-name-wrapper az">
+<span class="country-name-az" style="font-size:16px;">Азербайджан</span>
+</div>
+<a class="city-container az baku" href="http://itstep.az/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Баку</div>
+</a>
+<a class="city-container lt vilnyus" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Вільнюс</div>
+</a>
+<a class="city-container md kishinev" href="http://itstep.md/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Кишинів</div>
+</a>
+<a class="city-container bz rio" href="http://itstep.com.br/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Ріо де Жанейро</div>
+</a>
+<a class="city-container kz astana" href="http://astana.itstep.kz/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Астана</div>
+</a>
+<a class="city-container kz almaty" href="http://almaty.itstep.kz" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Алмати</div>
+</a>
+<a class="city-container kz karaganda" href="http://karaganda.itstep.kz/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Караганда</div>
+</a>
+<a class="city-container by minsk" href="http://itstep.by" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Мінськ</div>
+</a>
+<a class="city-container by bobruysk" href="http://bobruisk.itstep.by" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Бобруйськ</div>
+</a>
+<a class="city-container by gomel" href="http://gomel.itstep.by" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Гомель</div>
+</a>
+<a class="city-container ru tula" href="http://tula.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Тула</div>
+</a>
+
+<a class="city-container ru lipetsk" href="https://vrn.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Воронеж</div>
+</a>
+<a class="city-container ru krasn" href="http://krasnodar.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Краснодар</div>
+</a>
+<a class="city-container ru spb" href="http://itstep.spb.ru" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Санкт-Петербург</div>
+</a>
+<a class="city-container ru msk" href="http://msk.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Москва</div>
+</a>
+<a class="city-container ru nn" href="https://nn.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name" style="left: 52px;top: -16px;">Нижній Новгород</div>
+</a>
+<a class="city-container ru nsk" href="https://nsk.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name" style="top: -17px;left: 38px;">Новосибірськ</div>
+</a>
+<a class="city-container ru rostov" href=" https://rostov.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name" style="left: -47px;top: -17px;">Ростов-на-Дону</div>
+</a>
+<a class="city-container ru kaluga" href="http://kaluga.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Калуга</div>
+</a>
+<a class="city-container ru voronezh" href="http://voronezh.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Воронеж</div>
+</a>
+<a class="city-container ru nnovgorod" href="http://nnovgorod.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Нижній Новгород</div>
+</a>
+<a class="city-container ru ufa" href="http://ufa.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Уфа</div>
+</a>
+<a class="city-container ua lviv" href="http://lviv.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Львів</div>
+</a>
+<a class="city-container ua ternopil" href="https://te.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Тернопіль</div>
+</a>
+<a class="city-container ua if" href="https://if.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Івано-Франківськ</div>
+</a>
+
+<a class="city-container ua cherniv" href="https://chernivtsi.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Чернівці</div>
+</a>
+<a class="city-container ua khmel" href="http://khmelnitskiy.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Хмельницький</div>
+</a>
+<a class="city-container ua jitomir" href="http://zhitomir.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Житомир</div>
+</a>
+<a class="city-container ua lutsk" href="http://lutsk.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Луцьк</div>
+</a>
+<a class="city-container ua rovno" href="http://rivne.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Рівне</div>
+</a>
+<a class="city-container ua vinnitsa" href="http://vinnitsa.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Вінниця</div>
+</a>
+<a class="city-container ua kiev" href="http://kiev.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Київ</div>
+</a>
+<a class="city-container ua chernigov" href="http://chernigov.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Чернігів</div>
+</a>
+<a class="city-container ua poltava" href="http://poltava.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Полтава</div>
+</a>
+<a class="city-container ua dnepr" href="http://itstep.dp.ua" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Дніпро</div>
+</a>
+<a class="city-container ua kamyanske" href="http://kam.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Кам'янське</div>
+</a>
+<a class="city-container ua kharkov" href="http://itstep.kh.ua/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Харків</div>
+</a>
+
+<a class="city-container ua mariupol" href="http://mariupol.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Маріуполь</div>
+</a>
+
+<a class="city-container ua zp" href="http://itstep.zp.ua" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Запоріжжя</div>
+</a>
+<a class="city-container ua kr" href="http://kr.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Кривий Ріг</div>
+</a>
+<a class="city-container ua kherson" href="http://kherson.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Херсон</div>
+</a>
+<a class="city-container ua nikolaev" href="http://nikolaev.itstep.org/" target="_blank">
+<div class="marker" style="margin-left:25px;"></div>
+<div class="city-name">Миколаїв</div>
+</a>
+<a class="city-container ua odessa" href="http://od.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Одеса</div>
+</a>
+<a class="city-container ua simferopol" href="http://simferopol.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Сімферополь</div>
+</a>
+<a class="city-container cz praga" href="http://praha.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Прага</div>
+</a>
+
+<a class="city-container sh geneva" href="https://geneva.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Женева</div>
+</a>
+<a class="city-container ro buharest" href="http://ro.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Бухарест</div>
+</a>
+<a class="city-container bg sofiya" href="http://itstep.bg/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Софія</div>
+ </a>
+<a class="city-container ge tbilisi" href="http://ge.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Тбілісі</div>
+</a>
+<a class="city-container kh pnompen" href="http://cambodia.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Пномпен</div>
+</a>
+<a class="city-container sk bratislava" href="http://bratislava.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Братіслава</div>
+</a>
+<a class="city-container usa seattle" href="http://itstep.us/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Сіетл</div>
+</a>
+<a class="city-container mx tijuana" href="https://itstep.mx/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Тіхуана</div>
+</a>
+<a class="country-circle-outer circle-est" href="http://itstep.ee" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-by" href="http://itstep.by" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-ua">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-cz">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-lt">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-kz" href="http://itstep.kz" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-md" href="http://md.itstep.org" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-ge" href="http://ge.itstep.org" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-bg" href="http://itstep.bg" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-ro" href="http://ro.itstep.org" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-kh" href="http://cambodia.itstep.org" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-br" href="http://brasil.itstep.org" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-usa">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-sk">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+</div>
+</div>
+<footer>
+© 1999 - 2018<br>Комп'ютерна Академія ШАГ -<br>лідер в сфері комп'ютерної освіти!
+</footer>
+
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter100153 = new Ya.Metrika({id:100153,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+
+
+$('.active-language').on('click', function(e){
+    e.preventDefault();
+    $('.site-language li').show();
+});
+
+$(document).on('click','.nav-btn', function(){
+    $('.nav-main-menu').css('display', 'flex');
+    $('body:not(.nav-btn)').on('click', function(){
+        $('.nav-main-menu').css('display', 'none');
+    });
+});
+
+
+
+
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/100153" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+        STEP Computer Academy
+    </title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1264">
+<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+<link rel="stylesheet" type="text/css" href="../styles/geo_names_usa.css">
+<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+<link rel="stylesheet" type="text/css" href="../styles/fonts.css">
+<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<style>
+   .maps-bg{
+        min-width: 1000px;
+        background: #ffecd8 url(../../images/about/maps/ukraine-map-en.png) center 120px;
+        background-repeat: no-repeat;
+    }
+    </style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55617341-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="new-font-famaly class1 class2 class3">
+<div class="header-bg">
+<header>
+<ul class="site-language"><li data-lang="cz"><a href="../../cz">CZ</a></li><li data-lang="kh"><a href="../../kh">KH</a></li><li data-lang="ua"><a href="../../ua">UA</a></li><li data-lang="ro"><a href="../../ro">RO</a></li><li data-lang="ru"><a href="../../ru">RU</a></li><li data-lang="en" class="active-language"><a href="../../en">EN</a></li><li data-lang="pt"><a href="../../pt">PT</a></li><li data-lang="est"><a href="../../est">EST</a></li><li data-lang="sk"><a href="../../sk">SK</a></li><li data-lang="by"><a href="../../by">BY</a></li><li data-lang="bg"><a href="../../bg">BG</a></li><li data-lang="ge"><a href="../../ge">GE</a></li><li data-lang="az"><a href="../../az">AZ</a></li><li data-lang="kz"><a href="../../kz">KZ</a></li></ul><div class="clr"> </div> </header>
+</div>
+<div class="nav-main-bg">
+<div class="main-logo">
+<a class="logo" href="../en" alt="ШАГ">
+<img src="../images/logos/logo_en_2.png" alt="ШАГ">
+</a>
+<div class="nav-main">
+<ul class="nav-main-menu">
+<li><a href="about/" class="about_academy">About Academy</a></li>
+<li><a href="http://final.itstep.org/" class="stud_works">Student Works</a></li>
+<li><a href="http://success.itstep.org/" class="success_stories">Success Stories</a></li>
+
+</ul>
+</div>
+<div class="nav-btn"></div>
+<div class="clr"></div>
+</div>
+</div>
+<div class="country-map-bg">
+<div class="country-map">
+<h2 class="filial">Choose branch</h2>
+<select name="" id="country-select" onchange="top.location=this.value">
+<option value="http://itstep.az/">Baku</option>
+
+<option value="http://itstep.md/">Kishinev</option>
+<option value="http://itstep.com.br/">Rio de Janeiro</option>
+<option value="http://astana.itstep.kz/">Astana</option>
+<option value="http://almaty.itstep.kz">Almaty</option>
+<option value="http://karaganda.itstep.kz/">Karaganda</option>
+<option value="http://itstep.by"> Minsk</option>
+<option value="http://gomel.itstep.by">Gomel</option>
+<option value="http://bobruisk.itstep.by/">Bobrysk</option>
+<option value="http://tula.itstep.org">Tula</option>
+<option value="http://lipetsk.itstep.org">Lipetsk</option>
+<option value="http://krasnodar.itstep.org/">Krasnodar</option>
+<option value="http://msk.itstep.org">Moscow</option>
+<option value="http://itstep.spb.ru">St.-Petersburg</option>
+
+
+
+
+<option value="http://lviv.itstep.org">Lviv</option>
+<option value="http://khmelnitskiy.itstep.org/">Khmelnytskyi</option>
+<option value="https://chernivtsi.itstep.org/">Chernivtsi</option>
+<option value="http://zhitomir.itstep.org/">Zhytomyr</option>
+<option value="http://lutsk.itstep.org/">Lutsk</option>
+<option value="http://rivne.itstep.org/">Rovno</option>
+<option value="http://vinnitsa.itstep.org/">Vinnitsa</option>
+<option value="http://kiev.itstep.org/">Kiev</option>
+<option value="http://chernigov.itstep.org/">Chernigov</option>
+<option value="http://poltava.itstep.org/">Poltava</option>
+<option value="http://itstep.dp.ua">Dnepr</option>
+<option value="http://itstep.kh.ua/">Kharkov</option>
+
+<option value="http://mariupol.itstep.org/">Mariupol</option>
+
+<option value="http://itstep.zp.ua">Zaporizhia</option>
+<option value="http://kr.itstep.org/">Krivoy Rog</option>
+<option value="http://kherson.itstep.org/">Herson</option>
+<option value="http://nikolaev.itstep.org/">Nikolaev</option>
+<option value="http://od.itstep.org/">Odessa</option>
+<option value="http://simferopol.itstep.org/">Simferopol</option>
+<option value="http://praha.itstep.org/">Prague</option>
+<option value="http://itstep.ee/">Tallin</option>
+<option value="http://ro.itstep.org/">Bucharest</option>
+<option value="http://itstep.bg/">Sofia</option>
+<option value="http://ge.itstep.org/">Tbilisi</option>
+<option value="http://cambodia.itstep.org/">Phnom Penh</option>
+<option value="http://itstep.us/">Seattle</option>
+<div class="country-name-wrapper mx">
+<span class="country-name-ua">Mexico</span>
+</div>
+<option value="http://bratislava.itstep.org/">Bratislava</option>
+</select>
+<div class="country-name-wrapper usa">
+<span class="country-name-ua">USA</span>
+</div>
+<div class="country-name-wrapper mx">
+<span class="country-name-ua">Mexico</span>
+</div>
+<div class="country-name-wrapper ua big-map">
+<span class="country-name-ua">Ukraine</span>
+</div>
+<div class="country-name-wrapper kz">
+<span class="country-name-kz">Kazakhstan</span>
+</div>
+<div class="country-name-wrapper md">
+<span class="country-name-md">Moldova</span>
+</div>
+<div class="country-name-wrapper ru">
+<span class="country-name-ru">Russia</span>
+</div>
+<div class="country-name-wrapper by">
+<span class="country-name-by">Belarus</span>
+</div>
+
+<div class="country-name-wrapper cz min-size">
+<span class="country-name-cz">Czech Republic</span>
+</div>
+<div class="country-name-wrapper lt">
+<span class="country-name-lt">Lithuania</span>
+</div>
+<div class="country-name-wrapper br">
+<span class="country-name-br">Brazil</span>
+ </div>
+<div class="country-name-wrapper ro">
+<span class="country-name-ro" style="font-size:18px;">Romania</span>
+</div>
+<div class="country-name-wrapper bg">
+<span class="country-name-bg" style="font-size:18px;">Bulgaria</span>
+</div>
+<div class="country-name-wrapper ge">
+<span class="country-name-ge" style="font-size:18px;">Georgia</span>
+</div>
+<div class="country-name-wrapper kh">
+<span class="country-name-kh">Cambodia</span>
+</div>
+<div class="country-name-wrapper sk">
+<span class="country-name-kh">Slovakia</span>
+</div>
+<div class="country-name-wrapper az">
+<span class="country-name-az" style="font-size:16px;">Azerbaijan</span>
+</div>
+<div class="country-name-wrapper sh ">
+<span class="country-name-sh">Switzerland</span>
+</div>
+<a class="city-container sh geneva" href="https://geneva.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Geneva</div>
+</a>
+<a class="city-container az baku" href="http://itstep.az/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Baku</div>
+</a>
+<a class="city-container bz rio" href="http://itstep.com.br/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Rio de Janeiro</div>
+</a>
+<a class="city-container lt riga" href="#">
+<div class="marker"></div>
+<div class="city-name">Riga</div>
+</a>
+<a class="city-container kz astana" href="http://astana.itstep.kz/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Astana</div>
+</a>
+<a class="city-container kz almaty" href="http://almaty.itstep.kz/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Almaty</div>
+</a>
+<a class="city-container kz karaganda" href="http://karaganda.itstep.kz/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Karaganda</div>
+</a>
+<a class="city-container by minsk" href="http://itstep.by" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Minsk</div>
+</a>
+<a class="city-container by bobruysk" href="http://bobruisk.itstep.by" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Bobrysk</div>
+</a>
+<a class="city-container by gomel" href="http://gomel.itstep.by" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Gomel</div>
+</a>
+<a class="city-container md kishinev" href="http://itstep.md/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Kishinev</div>
+</a>
+<a class="city-container ru tula" href="http://tula.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Tula</div>
+</a>
+<a class="city-container ru lipetsk" href="http://lipetsk.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Lipetsk</div>
+</a>
+<a class="city-container ru krasn" href="http://krasnodar.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Krasnodar</div>
+</a>
+<a class="city-container ru msk" href="http://msk.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Moscow</div>
+</a>
+<a class="city-container ru spb" href="http://itstep.spb.ru" target="_blank">
+<div class="marker"></div>
+<div class="city-name">St.-Petersburg</div>
+</a>
+<a class="city-container ua lviv" href="http://lviv.itstep.org" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Lviv</div>
+</a>
+<a class="city-container ua ternopil" href="https://te.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Ternopil</div>
+</a>
+<a class="city-container ua if" href="https://if.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Ivano-Frankivsk</div>
+</a>
+
+<a class="city-container ua khmel" href="http://khmelnitskiy.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Khmelnytskyi</div>
+</a>
+<a class="city-container ua cherniv" href="https://chernivtsi.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Chernivtsi</div>
+</a>
+<a class="city-container ua lutsk" href="http://lutsk.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Lutsk</div>
+</a>
+<a class="city-container ua rovno" href="http://rivne.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Rovno</div>
+</a>
+<a class="city-container ua jitomir" href="http://zhitomir.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Zhytomyr</div>
+</a>
+<a class="city-container ua vinnitsa" href="http://vinnitsa.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Vinnitsa</div>
+</a>
+<a class="city-container ua kiev" href="http://kiev.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Kiev</div>
+</a>
+<a class="city-container ua chernigov" href="http://chernigov.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Chernigov</div>
+</a>
+<a class="city-container ua poltava" href="http://poltava.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Poltava</div>
+</a>
+<a class="city-container ua dnepr" href="http://itstep.dp.ua/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Dnepr</div>
+</a>
+<a class="city-container ua kamyanske" href="http://kam.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Kamyanske</div>
+</a>
+<a class="city-container ua kharkov" href="http://itstep.kh.ua/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Kharkov</div>
+</a>
+
+<a class="city-container ua mariupol" href="http://mariupol.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Mariupol</div>
+</a>
+
+<a class="city-container ua zp" href="http://itstep.zp.ua/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Zaporizhia</div>
+</a>
+<a class="city-container ua kr" href="http://kr.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Krivoy Rog</div>
+</a>
+<a class="city-container ua nikolaev" href="http://nikolaev.itstep.org/" target="_blank">
+<div class="marker" style="margin-left:25px;"></div>
+<div class="city-name">Nikolaev</div>
+</a>
+<a class="city-container ua kherson" href="http://kherson.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Herson</div>
+</a>
+
+<a class="city-container ua odessa" href="http://od.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Odessa</div>
+</a>
+<a class="city-container ua simferopol" href="http://simferopol.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Simferopol</div>
+</a>
+<a class="city-container usa seattle" href="http://itstep.us/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Seattle</div>
+</a>
+
+<a class="city-container cz praga" href="http://praha.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Prague</div>
+</a>
+<a class="city-container ro buharest" href="http://itstep.ro/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Bucharest</div>
+</a>
+<a class="city-container bg sofiya" href="http://itstep.bg/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Sofia</div>
+</a>
+<a class="city-container ge tbilisi" href="http://ge.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Tbilisi</div>
+</a>
+<a class="city-container kh pnompen" href="http://cambodia.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Phnom Penh</div>
+</a>
+
+<a class="city-container lt vilnyus" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Vilnius</div>
+</a>
+<a class="city-container sk bratislava" href="http://bratislava.itstep.org/" target="_blank">
+<div class="marker"></div>
+<div class="city-name">Bratislava</div>
+</a>
+<a class="country-circle-outer circle-est" href="http://itstep.ee" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-by" href="http://itstep.by" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-ua">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-cz">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-lt">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-kz" href="http://itstep.kz" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-md" href="http://itstep.md" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-ge" href="http://ge.itstep.org" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-bg" href="http://itstep.bg" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-ro" href="http://itstep.ro" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-kh" href="http://cambodia.itstep.org" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-br" href="http://itstep.com.br" target="_blank">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-usa">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+<a class="country-circle-outer circle-sk">
+<div class="country-circle">
+<div class="country-circle-inner"></div>
+</div>
+</a>
+</div>
+</div>
+<footer>
+© 1999 - 2018 STEP Computer Academy<br>a leader in the field of professional<br>computer education
+</footer>
+
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter100153 = new Ya.Metrika({id:100153,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+
+
+$('.active-language').on('click', function(e){
+    e.preventDefault();
+    $('.site-language li').show();
+});
+
+$(document).on('click','.nav-btn', function(){
+    $('.nav-main-menu').css('display', 'flex');
+    $('body:not(.nav-btn)').on('click', function(){
+        $('.nav-main-menu').css('display', 'none');
+    });
+});
+
+
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/100153" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</body>
+</html>
