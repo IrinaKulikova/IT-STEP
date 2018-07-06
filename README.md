@@ -4,7 +4,7 @@ my homeworks
 
 * [C++](C++)
 * [Java](java)
-* [C%23](C#)
+* [C#](C%23)
 * [MySQL](MySQL)
 * [JavaScript](javascript)
 * [php](php)
