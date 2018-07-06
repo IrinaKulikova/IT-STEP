@@ -2,9 +2,9 @@
 my homeworks
 
 
-* [Cpp](Cpp)
+* [C++](C++)
 * [Java](java)
-* [CSharp](CSharp)
+* [C#](C#)
 * [MySQL](MySQL)
 * [JavaScript](javascript)
 * [php](php)
