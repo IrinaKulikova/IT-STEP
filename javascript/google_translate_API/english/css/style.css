@@ -1,0 +1,41 @@
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    margin: auto;
+    width: 400px;
+}
+
+input[type="text"] {
+    width: 350px;
+}
+
+input,
+option,
+select {
+    display: inline-block;
+    margin: 6px;
+    padding: 6px;
+}
+
+div {
+    border: solid 1px gainsboro;
+    height: 200px;
+    width: 350px;
+    margin: 6px;
+    padding: 6px;
+}
+
+label {
+    font-size: 12px;
+}
+
+h2 {
+    text-align: center;
+}

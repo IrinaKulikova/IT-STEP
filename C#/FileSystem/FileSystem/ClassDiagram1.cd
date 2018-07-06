@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FileSystem.DialogConsole">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAIAICAAAAAAAAAAAA=</HashCode>
+      <FileName>DialogConsole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileSystem.BackUper">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAgACAAIAAACAACAgEgIAAAQAAAAAAAAAAgA=</HashCode>
+      <FileName>BackUper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FileSystem.MenuEnum">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAIAAAAAAgAAA=</HashCode>
+      <FileName>MenuEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FileSystem.Mounths">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEgAAABRAAAAAAQAwgAAAAAABAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Mounths.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

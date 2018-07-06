@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ToDo>
+  <tasks>
+    <task id="0001">
+      <name value=" to do homework"/>
+      <title value="download homework and consolidate knowledge gained in the audience"/>
+      <priority value="8"/>
+      <category id="1"/>
+      <process value="15"/>
+      <timeStart value="30.10.17"/>
+      <deadline value="9.11.17"/>
+    </task>
+    <task id="0002">
+      <name value="to prepare for the exam"/>
+      <title value="to repeat the material"/>
+      <priority value="9"/>
+      <category id="1"/>
+      <process value="50"/>
+      <timeStart value="21.10.17"/>
+      <deadline value="31.10.17"/>
+    </task>
+    <task id="0003">
+      <name value="to meet friends"/>
+      <title value="ventilate the brains"/>
+      <priority value="10"/>
+      <category id="2"/>
+      <process value="10"/>
+      <timeStart value="28.10.17"/>
+      <deadline value="29.10.17"/>
+    </task>
+    <task id="0004">
+      <name value="whinter is coming"/>
+      <title value="hat, scarf, boots..."/>
+      <priority value="7"/>
+      <category id="2"/>
+      <process value="60"/>
+      <timeStart value="4.11.17"/>
+      <deadline value="6.11.17"/>
+    </task>
+    <task id="0005">
+      <name value="just sleep"/>
+      <title value="to have a good sleep"/>
+      <priority value="10"/>
+      <category id="2"/>
+      <process value="0"/>
+      <timeStart value="13.10.13"/>
+      <deadline value="-"/>
+    </task>
+    <task id="0006">
+      <name value="to play with dauther"/>
+      <title value="assemble a constructor"/>
+      <priority value="10"/>
+      <category id="3"/>
+      <process value="50"/>
+      <timeStart value="30.10.17"/>
+      <deadline value="30.10.17"/>
+    </task>
+    <task id="0007">
+      <name value="husband"/>
+      <title value="to watch the series"/>
+      <priority value="10"/>
+      <category id="3"/>
+      <process value="10"/>
+      <timeStart value="28.10.17"/>
+      <deadline value="28.10.17"/>
+    </task>
+  </tasks>
+  <categories>
+    <category id="1" name="study"/>
+    <category id="2" name="relaxation"/>
+    <category id="3" name="family"/>
+  </categories>
+</ToDo>

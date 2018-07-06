@@ -1,0 +1,15 @@
+{
+  "name": "framework/myApp",
+  "description": "home_composer",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Irina",
+      "email": "irenecooper@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2-app-basic": "2.0.2"
+  }
+}

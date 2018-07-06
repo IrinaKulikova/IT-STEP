@@ -1,0 +1,38 @@
+   #map {
+       width: 800px;
+       height: 600px;
+       display: inline-block;
+   }
+
+   * {
+       font-family: sans-serif;
+   }
+
+   body,
+   html {
+       margin: 0px;
+       text-align: center;
+   }
+
+   h1 {
+       text-align: center;
+   }
+
+   section {
+       display: inline;
+       width: 1000px;
+       margin: auto;
+   }
+
+   input,
+   button {
+       width: 80px;
+       margin-top: 24px;
+       margin-left: 16px;
+       padding: 6px;
+   }
+
+   p {
+       margin: 16px;
+       display: inline-block;
+   }

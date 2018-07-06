@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DelegateStudent.Subject">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAIAJEDAACAAQEAAiAAAAAAAYQAAIAAAA=</HashCode>
+      <FileName>classes\Subject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DelegateStudent.Student">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAEAAQAUAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>classes\Student.cs</FileName>
+      <NewMemberFileName>Program.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DelegateStudent.JournalMarks">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAIAAAIAAAA=</HashCode>
+      <FileName>classes\JournalMarks.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DelegateStudent.JournalMenu">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAIAAAAA=</HashCode>
+      <FileName>menu\ClassJournalMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DelegateStudent.StudentMenu">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAgAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>menu\ClassStudentMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DelegateStudent.ClassSubjectMenu">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAABAAAAAAAIAAAgAAAAAAABQAAAAAAA=</HashCode>
+      <FileName>menu\ClassSubjectMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DelegateStudent.MarkException">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MarkException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DelegateStudent.Program">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAEAAAAAAAACAAAAAAAAABAAIACA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DelegateStudent.IJournalMarks">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>interfaces\IJournalMarks.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DelegateStudent.IStudent">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAEAAQAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>interfaces\IStudent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DelegateStudent.ISubject">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAJACAACAAQEAAAAAAAAAAQQAAAAAAA=</HashCode>
+      <FileName>interfaces\ISubject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DelegateStudent.MenuJournal">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAEAA=</HashCode>
+      <FileName>menu\EnumMenuJournal.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DelegateStudent.MenuStudent">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>menu\EnumMenuStudent.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DelegateStudent.SubjectsName">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEAAAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>menu\SubjectsName.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DelegateStudent.SubjectMenu">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAEAAIAAAAAAAAAAABQAAAAAAA=</HashCode>
+      <FileName>menu\EnumSubjectMenu.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="DelegateStudent.MarkDlg">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="DelegateStudent.StudentGoNextDlg">
+    <Position X="12.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tasks.MainMenu">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACgAACYAAAAAAAAAAAAACBAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tasks.Parser">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAIwVAAAAKBAQgAghQFAgYAKAAAIAAAAAAA=</HashCode>
+      <FileName>Parser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Tasks.IParser">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIgUAAAAAAAAAAAhQEAgQACAAAAAAAAAAA=</HashCode>
+      <FileName>IParser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Tasks.EnumMainMenu">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAIAAIAAAAAAA=</HashCode>
+      <FileName>EnumMainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tasks.EnumToDo">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAIAAAAAAA=</HashCode>
+      <FileName>EnumToDo.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tasks.EnumMenu">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAAAAAAAAAAAAAAAAAAAAAAEEAAACAAAAAAAAAAA=</HashCode>
+      <FileName>EnumMenu.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tasks.EnumEditCategory">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnumEditCategory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tasks.EnumEditTask">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAEAEAgAAAAQAIAAAAAAAAAEAAAAACAA=</HashCode>
+      <FileName>EnumEditTask.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

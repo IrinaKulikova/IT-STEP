@@ -1,0 +1,84 @@
+* {
+    font-family: 'Architects Daughter', cursive;
+    color: darkgrey;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+audio {
+    float: right;
+    margin-left: 16px;
+}
+
+nav,
+footer {
+    width: 800px;
+    margin: auto;
+    text-align: right
+}
+
+footer {
+    position: absolute;
+    top:610px;
+    left:-250px;
+    width: 800px;
+    margin: auto;
+    text-align: right
+}
+
+img{
+    width: 800px;
+}
+
+section {
+    position: relative;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.previous,
+.next {
+    position: absolute;   
+    top: 200px;
+}
+
+h1{    
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.previous:focus,
+.next:focus {
+    outline: none;
+}
+
+.next {
+    left: 765px;
+}
+
+.previous{
+    left: 15px;
+}
+
+input {
+    width: 40px;
+    padding-left: 8px;
+    color: darkgrey;
+}
+
+button, 
+input{
+    margin-bottom: 16px;
+    font-size: 16px;
+    padding: 4px;
+}
+
+span{
+    opacity: 0.4;
+    font-size: 14px;
+}

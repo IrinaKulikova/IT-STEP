@@ -1,0 +1,15 @@
+{
+  "name": "composer/test",
+  "description": "test_task",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "kulykova",
+      "email": "cg.irenecooper@gmail.com"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "v6.0.5"
+  }
+}

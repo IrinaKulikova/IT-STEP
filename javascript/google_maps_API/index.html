@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Map</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section>
+        <p>Название</p>
+        <input type="text" id="name" />
+        <p>Широта</p>
+        <input type="text" id="latitude" />
+        <p>Долгота</p>
+        <input type="text" id="longitude" />
+        <button id="btn">На карте</button>
+        <br/>
+        <div id="map"></div>
+    </section>
+
+    <script>
+        var map;
+        var myLatLng;
+
+        function initMap() {
+            myLatLng = {
+                lat: 48.45,
+                lng: 35
+            };
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 16
+            });
+
+            map.addListener('click', (e) => {
+                var marker = new google.maps.Marker({
+                    position: {
+                        lat: e.latLng.lat(),
+                        lng: e.latLng.lng()
+                    },
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                });
+                marker.setMap(map);
+            });
+
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsRnVOrAMBCgwCVFGag8962vM1S1_KqJM&callback=initMap" async defer></script>
+    <script>
+        var btn = document.getElementById('btn');
+        var latitude = document.getElementById('latitude');
+        var longitude = document.getElementById('longitude');
+        btn.addEventListener('click', () => {
+
+            latitude = parseFloat(latitude.value);
+            longitude = parseFloat(longitude.value);
+
+            if (isFinite(latitude) && isFinite(longitude)) {
+                let position1 = {
+                    lat: latitude,
+                    lng: longitude
+                };
+                map.setCenter(position1);
+                var marker = new google.maps.Marker({
+                    position: position1,
+                    map: map,
+                    title: document.getElementById('name').value,
+                    animation: google.maps.Animation.DROP
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>

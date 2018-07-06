@@ -1,0 +1,41 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    //font-family: 'Mukta Mahee', sans-serif;
+    color:cornflowerblue;
+    font-size: 18px;
+}
+
+section {
+    width: 300px;
+    background-color: azure;
+    margin: 16px;;
+    border-radius: 30px;
+    padding: 24px;
+}
+
+body {
+    padding-top: 8px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+section > p {
+    text-align: center;
+    margin: 8px;
+    padding: 0px;
+    color:crimson;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#dataWeater > p:nth-child(2){
+     display: inline-block;
+}
+
+img{
+   float: right;
+}
