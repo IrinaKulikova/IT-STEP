@@ -1,4 +1,4 @@
-# IT-Academy-STEP
+# IT-STEP
 my homeworks
 
 
