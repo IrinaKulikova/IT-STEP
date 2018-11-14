@@ -1,6 +1,4 @@
 using OpenQA.Selenium;
-using System;
-using System.Threading;
 using Xunit;
 using static Xunit.Assert;
 
@@ -8,7 +6,8 @@ namespace SeleniumTestCalculator
 {
     //Написать тесткейсы для тестирования калькулятора с применением Selenium WebDriver
     public class CalculatorTest : BaseTest
-    {
+    {       
+
         [Fact]
         public void TestPlus()
         {
@@ -32,7 +31,6 @@ namespace SeleniumTestCalculator
             webDriver.FindElement(By.CssSelector(result)).Click();
             actual = webDriver.FindElement(By.CssSelector(target)).Text;
             Equal("6", actual);
-            Thread.Sleep(2000);
         }
 
         [Fact]
@@ -58,7 +56,6 @@ namespace SeleniumTestCalculator
             webDriver.FindElement(By.CssSelector(result)).Click();
             actual = webDriver.FindElement(By.CssSelector(target)).Text;
             Equal("-2", actual);
-            Thread.Sleep(2000);
         }
 
         [Fact]
@@ -84,7 +81,6 @@ namespace SeleniumTestCalculator
             webDriver.FindElement(By.CssSelector(result)).Click();
             actual = webDriver.FindElement(By.CssSelector(target)).Text;
             Equal("8", actual);
-            Thread.Sleep(2000);
         }
 
         [Fact]
@@ -177,22 +173,132 @@ namespace SeleniumTestCalculator
             webDriver.FindElement(By.CssSelector(result)).Click();
             actual = webDriver.FindElement(By.CssSelector(target)).Text;
             Equal("6.6", actual);
-            Thread.Sleep(2000);
         }
 
         [Fact]
         public void TestMinusRealNumbers()
         {
+            var button2 = "#calculator > div.keys > span:nth-child(10)";
+            webDriver.FindElement(By.CssSelector(button2)).Click();
+            var target = "#calculator > div.top > div";
+            var actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2", actual);
+
+            var buttonDote = "#calculator > div.keys > span:nth-child(14)";
+            webDriver.FindElement(By.CssSelector(buttonDote)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.", actual);
+
+            webDriver.FindElement(By.CssSelector(button2)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2", actual);
+
+            var minus = "#calculator > div.keys > span:nth-child(8)";
+            webDriver.FindElement(By.CssSelector(minus)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2-", actual);
+
+            var button4 = "#calculator > div.keys > span:nth-child(5)";
+            webDriver.FindElement(By.CssSelector(button4)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2-4", actual);
+
+            webDriver.FindElement(By.CssSelector(buttonDote)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2-4.", actual);
+
+            webDriver.FindElement(By.CssSelector(button4)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2-4.4", actual);
+
+            var result = "#calculator > div.keys > span.eval";
+            webDriver.FindElement(By.CssSelector(result)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("-2.2", actual);
         }
 
         [Fact]
         public void TestMultiRealNumbers()
         {
+            var button2 = "#calculator > div.keys > span:nth-child(10)";
+            webDriver.FindElement(By.CssSelector(button2)).Click();
+            var target = "#calculator > div.top > div";
+            var actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2", actual);
+
+            var buttonDote = "#calculator > div.keys > span:nth-child(14)";
+            webDriver.FindElement(By.CssSelector(buttonDote)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.", actual);
+
+            webDriver.FindElement(By.CssSelector(button2)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2", actual);
+
+            var multy = "#calculator > div.keys > span:nth-child(16)";
+            webDriver.FindElement(By.CssSelector(multy)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2x", actual);
+
+            var button5 = "#calculator > div.keys > span:nth-child(6)";
+            webDriver.FindElement(By.CssSelector(button5)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2x5", actual);
+
+            webDriver.FindElement(By.CssSelector(buttonDote)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2x5.", actual);
+
+            webDriver.FindElement(By.CssSelector(button5)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2x5.5", actual);
+
+            var result = "#calculator > div.keys > span.eval";
+            webDriver.FindElement(By.CssSelector(result)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("12.1", actual);
         }
 
         [Fact]
         public void TestDivRealNumbers()
         {
+            var button2 = "#calculator > div.keys > span:nth-child(10)";
+            webDriver.FindElement(By.CssSelector(button2)).Click();
+            var target = "#calculator > div.top > div";
+            var actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2", actual);
+
+            var buttonDote = "#calculator > div.keys > span:nth-child(14)";
+            webDriver.FindElement(By.CssSelector(buttonDote)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.", actual);
+
+            webDriver.FindElement(By.CssSelector(button2)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2", actual);
+
+            var div = "#calculator > div.keys > span:nth-child(12)";
+            webDriver.FindElement(By.CssSelector(div)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2/", actual);
+
+            var button5 = "#calculator > div.keys > span:nth-child(6)";
+            webDriver.FindElement(By.CssSelector(button5)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2/5", actual);
+
+            webDriver.FindElement(By.CssSelector(buttonDote)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2/5.", actual);
+
+            webDriver.FindElement(By.CssSelector(button5)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("2.2/5.5", actual);
+
+            var result = "#calculator > div.keys > span.eval";
+            webDriver.FindElement(By.CssSelector(result)).Click();
+            actual = webDriver.FindElement(By.CssSelector(target)).Text;
+            Equal("0.4", actual);
         }
     }
 }
