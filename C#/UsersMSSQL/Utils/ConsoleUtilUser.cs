@@ -11,15 +11,15 @@ namespace UsersMSSQL
         internal static User GetData()
         {
             User user = new User();
-            Write("Введите имя: ");
+            Write("Name: ");
             user.Name = ReadLine();
-            Write("Введите отчество: ");
+            Write("Second name: ");
             user.SecondName = ReadLine();
-            Write("Введите фамилию: ");
+            Write("Last name: ");
             user.LastName = ReadLine();
-            Write("Введите телефон: ");
+            Write("Phone: ");
             user.Phone = ReadLine();
-            Write("Введите почту: ");
+            Write("Email: ");
             user.Email = ReadLine();
             return user;
         }

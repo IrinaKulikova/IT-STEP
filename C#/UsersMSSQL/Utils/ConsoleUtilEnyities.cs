@@ -10,12 +10,12 @@ namespace UsersMSSQL
     {
         internal static void ErrorMessageId()
         {
-            WriteLine("Такого id нет!");
+            WriteLine("There is no id!");
         }
 
         internal static int GetId()
         {
-            Write("Введите Id: ");
+            Write("Id: ");
             int id = 0;
             string data = String.Empty;
             do

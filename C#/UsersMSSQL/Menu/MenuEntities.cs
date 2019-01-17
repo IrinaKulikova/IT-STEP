@@ -13,7 +13,7 @@ namespace UsersMSSQL
             do
             {
                 Clear();
-                WriteLine("Menu:");
+                WriteLine("Main menu:");
                 foreach (MenuEntitiesEnum entity in items)
                 {
                     WriteLine(entity + " " + (int)entity);

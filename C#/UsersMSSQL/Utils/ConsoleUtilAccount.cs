@@ -11,9 +11,9 @@ namespace UsersMSSQL
         internal static Account GetData()
         {
             Account account = new Account();
-            Write("Введите логин: ");
+            Write("Login: ");
             account.Login = ReadLine();
-            Write("Введите пароль: ");
+            Write("Password: ");
             account.Password = ReadLine();
             return account;
         }

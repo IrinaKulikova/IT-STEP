@@ -11,7 +11,7 @@ namespace UsersMSSQL
         internal static Role GetData()
         {
             Role role = new Role();
-            Write("Введите имя роли: ");
+            Write("Role's name: ");
             role.Name = ReadLine();
             return role;
         }
