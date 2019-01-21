@@ -1,0 +1,1 @@
+Data Source=USER-PC\SQLEXPRESS;Initial Catalog=StaffHW;User Id=user_staff;Password=UserStaff123;Trusted_Connection=True;
